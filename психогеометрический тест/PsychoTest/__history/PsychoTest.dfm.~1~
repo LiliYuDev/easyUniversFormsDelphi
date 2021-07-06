@@ -1,0 +1,53 @@
+object FMain: TFMain
+  Left = 0
+  Top = 0
+  Caption = #1055#1089#1080#1093#1086#1075#1077#1086#1084#1077#1090#1088#1080#1095#1077#1089#1082#1080#1081' '#1090#1077#1089#1090
+  ClientHeight = 261
+  ClientWidth = 548
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Quadr: TImage
+    Left = 32
+    Top = 24
+    Width = 65
+    Height = 65
+  end
+  object Trian: TImage
+    Left = 136
+    Top = 24
+    Width = 65
+    Height = 65
+  end
+  object Circl: TImage
+    Left = 240
+    Top = 24
+    Width = 65
+    Height = 65
+  end
+  object Zigzag: TImage
+    Left = 344
+    Top = 24
+    Width = 65
+    Height = 65
+  end
+  object Rect: TImage
+    Left = 448
+    Top = 24
+    Width = 65
+    Height = 65
+  end
+  object LRes: TLabel
+    Left = 32
+    Top = 152
+    Width = 481
+    Height = 41
+    Caption = #1056#1077#1079#1091#1083#1100#1090#1072#1090':'
+  end
+end

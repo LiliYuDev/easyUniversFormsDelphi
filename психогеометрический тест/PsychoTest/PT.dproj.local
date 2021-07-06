@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2020.04.16 14:45:06.415,=D:\Zona Downloads\project delphi\Unit1.pas</Transaction>
+    <Transaction>2020.04.16 15:04:56.065,D:\Zona Downloads\project delphi\PsychoTest\PsychoTest.dfm=D:\Zona Downloads\project delphi\Unit1.dfm</Transaction>
+    <Transaction>2020.04.16 15:04:56.065,D:\Zona Downloads\project delphi\PsychoTest\PsychoTest.pas=D:\Zona Downloads\project delphi\Unit1.pas</Transaction>
+    <Transaction>2020.04.16 15:05:28.498,D:\Zona Downloads\project delphi\PsychoTest\PT.dproj=D:\Zona Downloads\project delphi\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
