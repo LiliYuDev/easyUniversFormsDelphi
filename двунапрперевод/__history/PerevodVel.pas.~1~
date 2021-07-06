@@ -1,0 +1,111 @@
+unit PerevodVel;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Menus;
+
+type
+  TFMain = class(TForm)
+    BClose: TButton;
+    EVel1: TEdit;
+    EVel2: TEdit;
+    BChange: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    //procedure BChangeClick(Sender: TObject);
+    procedure BCloseClick(Sender: TObject);
+    procedure EVel1Enter(Sender: TObject);
+    procedure EVel2Enter(Sender: TObject);
+    procedure BChangeClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FMain: TFMain;
+
+implementation
+
+{$R *.dfm}
+
+type
+  tKoef=array [0..4] of real;
+const
+  Koef: tKoef=(1000, 10, 10, 10, 71);
+
+procedure TFMain.BCloseClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TFMain.EVel1Enter(Sender: TObject);
+begin
+  Evel2.Clear;
+end;
+
+procedure TFMain.EVel2Enter(Sender: TObject);
+begin
+  Evel1.Clear;
+end;
+
+
+procedure TFMain.BChangeClick(Sender: TObject);
+var
+  e1,e2, dest: real;
+begin
+  try
+    e1:=StrToFloat(EVel1.Text);
+  except
+    ShowMessage('Недопустимая строка');
+  end;
+
+  try
+    e2:=StrToFloat(EVel2.Text);
+  except
+    ShowMessage('Недопустимая строка');
+  end;
+
+  if (e1>=0) xor (e2>=0) then begin
+    if (cbVelich1.ItemIndex=-1) or (cbVelich2.ItemIndex=-1)  then begin
+      ShowMessage('Надо выбать величину');
+    end;
+    dest:=Koef[cbVelich2.ItemIndex]*e1;
+    EVel2.Text:=FloatToStr(dest)
+  end
+
+  else begin
+    ShowMessage('Значение должно быть положительным');
+  end;
+
+    if (e2>=0) then begin
+    if (cbVelich1.ItemIndex=-1) or (cbVelich2.ItemIndex=-1)  then begin
+      ShowMessage('Надо выбать величину');
+    end;
+    dest:=Koef[cbVelich1.ItemIndex]/e1;
+    EVel1.Text:=FloatToStr(dest)
+  end
+
+  else begin
+    ShowMessage('Значение должно быть положительным');
+  end;
+
+
+  case CBtwo.Checked of
+    False:
+      begin
+        EVel2.Text:=FloatToStr(dest);
+      end;
+    True:
+      begin
+        EVel2.Text:=FloatToStrF(dest,ffFixed,10,2);
+      end;
+  end;
+end;
+
+
+end.
+

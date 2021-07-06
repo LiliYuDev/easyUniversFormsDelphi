@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.250,D:\Zona Downloads\project delphi\lab3chapter2\PerevodVel.pas=D:\Zona Downloads\project delphi\lab32sia\Cvel.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.540,D:\Zona Downloads\project delphi\lab32sia\changevelich.dproj=D:\Zona Downloads\project delphi\lab3\changemoney.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.574,D:\Zona Downloads\project delphi\lab3\change.dfm=D:\Zona Downloads\project delphi\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.801,D:\Zona Downloads\project delphi\lab32sia\Cvel.dfm=D:\Zona Downloads\project delphi\lab3\change.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.250,D:\Zona Downloads\project delphi\lab3chapter2\PerevodVel.dfm=D:\Zona Downloads\project delphi\lab32sia\Cvel.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.901,=D:\Zona Downloads\project delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.801,D:\Zona Downloads\project delphi\lab32sia\Cvel.pas=D:\Zona Downloads\project delphi\lab3\change.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.731,D:\Zona Downloads\project delphi\lab3chapter2\changVel.dproj=D:\Zona Downloads\project delphi\lab32sia\changevelich.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.574,D:\Zona Downloads\project delphi\lab3\change.pas=D:\Zona Downloads\project delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.411,D:\Zona Downloads\project delphi\lab3\changemoney.dproj=D:\Zona Downloads\project delphi\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
