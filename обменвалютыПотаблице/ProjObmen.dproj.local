@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.614,=D:\Zona Downloads\project delphi\lab5\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.426,D:\Zona Downloads\project delphi\lab5\Unit1.pas=D:\Zona Downloads\project delphi\lab5\UAbout.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.848,=D:\Zona Downloads\project delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.295,D:\Zona Downloads\project delphi\Unit1.pas=D:\Zona Downloads\project delphi\lab5\ObmVal.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.762,D:\Zona Downloads\project delphi\lab5\Unit2.dfm=D:\Zona Downloads\project delphi\lab5\UMaxMin.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,D:\Zona Downloads\project delphi\Project1.dproj=D:\Zona Downloads\project delphi\lab5\ProjObmen.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.134,=D:\Zona Downloads\project delphi\lab5\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.762,D:\Zona Downloads\project delphi\lab5\Unit2.pas=D:\Zona Downloads\project delphi\lab5\UMaxMin.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.426,D:\Zona Downloads\project delphi\lab5\Unit1.dfm=D:\Zona Downloads\project delphi\lab5\UAbout.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.295,D:\Zona Downloads\project delphi\Unit1.dfm=D:\Zona Downloads\project delphi\lab5\ObmVal.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

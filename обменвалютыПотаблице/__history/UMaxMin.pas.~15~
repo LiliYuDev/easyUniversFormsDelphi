@@ -1,0 +1,68 @@
+unit UMaxMin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.Grids;
+
+type
+  TFMinMax = class(TForm)
+    BitBtn1: TBitBtn;
+    SGMM: TStringGrid;
+    procedure FormCreate(Sender: TObject);
+    procedure SGMMClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FMinMax: TFMinMax;
+
+implementation
+
+{$R *.dfm}
+
+uses ObmVal;
+
+procedure TFMinMax.FormCreate(Sender: TObject);
+begin
+  SGMM.Cells[0,0]:=' ';
+  SGMM.Cells[0,1]:='Валюта с самым низким курсом';
+  SGMM.Cells[0,2]:='Валюта с самым высоким курсом';
+  SGMM.Cells[1,0]:='Название';
+  SGMM.Cells[2,0]:='Курс';
+  SGMM.Cells[3,0]:='Результат обмена';
+  SGMM.ColWidths[0]:= 225;
+  SGMM.ColWidths[1]:= 109;
+  SGMM.ColWidths[2]:= 109;
+  SGMM.ColWidths[3]:= 160;
+  SGMM.RowHeights[1]:= 53;
+  SGMM.RowHeights[2]:= 52;
+end;
+
+procedure TFMinMax.SGMMClick(Sender: TObject);
+  var
+  i,j,k, n,z,m, imin,imax:integer;
+
+begin
+  n:= FMain.SGVal.RowCount-1;  //кол-во строк в главной таблице
+  m:= FMain.SGVal.ColCount-1; //кол-во столбцов в главной таблице
+  z:= FMinMax.SGMM.ColCount-1; //кол-во столбцов в дочерней таблице
+  imin:=1;
+  imax:=1;
+  for i := 1 to n do begin
+    if (StrToFloat(FMain.SGVal.Cells[1,i])>StrToFloat(FMain.SGVal.Cells[1,imax])) then imax:=i;
+    if (StrToFloat(FMain.SGVal.Cells[1,i])<StrToFloat(FMain.SGVal.Cells[1,imin])) then imin:=i;
+  end;
+  //мин и макс
+  for k := 1 to z do begin
+    for j := 0 to m do begin
+      FMinMax.SGMM.Cells[k,1]:=FMain.SGVal.Cells[j,imin];
+      FMinMax.SGMM.Cells[k,2]:=FMain.SGVal.Cells[j,imax];
+    end;
+  end;
+ end;
+end.
